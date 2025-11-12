@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arsitek Digital</title>
+	<link rel="stylesheet" href="/pemweb/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="/pemweb/style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+        .project-container {
+			background-color: white;
+			max-width: 1200px;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 50pt;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: white;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="/portofolio/index.html#hubungi">contact</a></li>
+			<li>works</li>
+			<li>expertience</li>
+			<li class="empty"></li>
+			<li>behance</li>
+			<li><a href="https://www.instagram.com/0c_o1x?igsh=MTV4bDBiZnh0aWFyMw==" target="_blank">instagram</a></li>
+			<li>linkedin</li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="/pemweb/Web Biru.jpg" class="full-width-image" alt="Cosmetics Branding Project">
+			<h1 class="project-title">Arsitek<br>Digital</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="/portofolio/index.html">Home</a> / <a href="ios26.html">Arsitek Digital</a>
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Awal Mula Sebuah Kode</h2>
+						<p>Semua website yang kita kunjungi berawal dari satu hal sederhana: kode. HTML, CSS, dan JavaScript jadi fondasi utama dalam membentuk tampilan serta interaksi di web. Dari tulisan biasa bisa berubah jadi desain menarik yang responsif dan dinamis. Di sinilah perjalanan seorang pembuat web dimulai — memahami bagaimana sebuah baris kecil kode bisa membangun sesuatu yang besar dan bermakna.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Bahasa yang Menghidupkan Website</h2>
+						<p>Kalau HTML adalah kerangkanya, maka CSS memberi warna dan gaya, sementara JavaScript membuatnya hidup. Tiga bahasa ini bekerja berdampingan seperti tim yang saling melengkapi, membentuk tampilan serta interaksi yang kita nikmati setiap kali membuka sebuah situs. Belajar pemrograman web bukan cuma soal menulis baris kode, tapi tentang memahami bagaimana logika dan estetika bisa berpadu untuk menciptakan sesuatu yang bermakna, Dengan menguasai bahasa-bahasa ini, kita tidak hanya belajar membuat halaman web, tapi juga belajar bagaimana sebuah ide bisa tumbuh menjadi karya digital yang bisa dirasakan banyak orang. Setiap baris kode yang ditulis membawa kemungkinan baru — dari animasi kecil yang menarik perhatian, hingga fitur interaktif yang membuat pengguna betah berlama-lama di dalamnya.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Desain dan Fungsionalitas yang Menyatu</h2>
+						<p>Website yang baik bukan hanya soal tampilan yang menarik, tapi juga bagaimana pengguna merasa nyaman saat menggunakannya. Desain yang indah memang memikat perhatian, tapi fungsi yang berjalan lancar adalah yang membuat pengunjung ingin kembali. Inilah seni sejati dari pemrograman web — menyatukan keindahan visual dengan logika yang efisien, Setiap tombol, warna, dan tata letak punya peran dalam menciptakan pengalaman yang menyenangkan. Pemrogram web bukan hanya “membangun” situs, tapi juga “merancang” perjalanan pengguna di dalamnya. Saat desain dan fungsi bekerja selaras, sebuah website bisa lebih dari sekadar halaman di internet — ia bisa menjadi ruang yang hidup, interaktif, dan penuh makna, Maka tugas seorang pengembang web bukan sekadar menulis kode, tapi menghadirkan pengalaman digital yang memudahkan, menginspirasi, dan meninggalkan kesan.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Memabngun Dari Ide Ke Realia</h2>
+						<p>Salah satu hal paling menarik dari pemrograman web adalah bagaimana ide sederhana bisa berkembang menjadi sesuatu yang nyata. Dari sekadar konsep di pikiran, baris demi baris kode mampu membentuk sebuah karya digital yang bisa digunakan banyak orang. Proses ini bukan hanya soal teknis, tapi juga tentang ketekunan, rasa ingin tahu, dan keberanian untuk terus mencoba meski hasilnya belum sempurna, Membangun web berarti memberi bentuk pada gagasan dan menjadikannya hidup. Setiap proyek adalah langkah baru untuk belajar dan berinovasi, membuka peluang tak terbatas di dunia digital. Di balik setiap halaman web yang kita lihat, ada semangat untuk mencipta, memperbaiki, dan membuktikan bahwa ide sekecil apa pun bisa tumbuh menjadi sesuatu yang besar.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Beragam Web</h2>
+						<div class="project-slider">				
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="/pemweb/beragam web.jpg" alt="htmlcss">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer id="contact">
+		<h2>Bangun web mu <br>bangun masa depanmu</h2>
+			<p>Made by Rezil Albuchori 2025</p>
+		</footer>
+	</body>
+	</html>
